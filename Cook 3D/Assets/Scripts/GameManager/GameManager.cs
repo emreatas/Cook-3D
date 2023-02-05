@@ -59,6 +59,30 @@ public class GameManager : MonoBehaviour
             RetryLevel();
         }
     }
+    public static event Action<int> NextMeal;
+    public void OnNextMeal(int meal)
+    {
+        if (NextMeal != null)
+        {
+            NextMeal(meal);
+        }
+    }
+    public static event Action MealFinish;
+    public void OnMealFinish()
+    {
+        if (MealFinish != null)
+        {
+            MealFinish();
+        }
+    }
+    public static event Action ContinueLevel;
+    public void OnContinueLevel()
+    {
+        if (ContinueLevel != null)
+        {
+            ContinueLevel();
+        }
+    }
     #endregion
 
     #region Timer

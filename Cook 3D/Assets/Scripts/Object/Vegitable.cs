@@ -22,7 +22,11 @@ public class Vegitable : MonoBehaviour, IDrag, IDoubleClick
     }
     public void onEndDrag()
     {
-        _rb.useGravity = true;
+        if (_rb != null)
+        {
+            _rb.useGravity = true;
+
+        }
     }
 
     public void onDoubleClick()

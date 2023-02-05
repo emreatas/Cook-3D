@@ -13,49 +13,76 @@ MonoBehaviour:
   m_Name: Level Manager
   m_EditorClassIdentifier: 
   levels:
-  - leveltime: 300
-    levelDifficulty: 0
-    orders:
-    - vegitable: {fileID: 4950802095330036371, guid: b3ab3de1f61a8f949afe00a08d2e4b94, type: 3}
-      count: 2
-    - vegitable: {fileID: 5281712408074506688, guid: b5bcc3fc65141c74d9170a2eedb0fe55, type: 3}
-      count: 3
-    - vegitable: {fileID: 8636911649630760228, guid: aa43e3cc6b4f2474198098ae045edbed, type: 3}
-      count: 3
   - leveltime: 100
     levelDifficulty: 0
-    orders:
-    - vegitable: {fileID: 7533688808910108983, guid: 7beea9ad750e98643b77f2a315d54459, type: 3}
-      count: 2
-    - vegitable: {fileID: 33437009371143408, guid: b53777adde7f99e4cb512c73a2ea14bd, type: 3}
-      count: 2
-  - leveltime: 0
+    meals:
+    - orders:
+      - vegitable: {fileID: 4950802095330036371, guid: b3ab3de1f61a8f949afe00a08d2e4b94, type: 3}
+        count: 2
+      - vegitable: {fileID: 5281712408074506688, guid: b5bcc3fc65141c74d9170a2eedb0fe55, type: 3}
+        count: 2
+    - orders:
+      - vegitable: {fileID: 8636911649630760228, guid: aa43e3cc6b4f2474198098ae045edbed, type: 3}
+        count: 2
+      - vegitable: {fileID: 5720409493226147837, guid: fb79cf13fb57c644f880b7ed3c5be507, type: 3}
+        count: 2
+  - leveltime: 50
     levelDifficulty: 0
-    orders: []
-  - leveltime: 0
-    levelDifficulty: 0
-    orders: []
-  - leveltime: 0
-    levelDifficulty: 0
-    orders: []
-  - leveltime: 0
-    levelDifficulty: 0
-    orders: []
-  - leveltime: 0
-    levelDifficulty: 0
-    orders: []
-  - leveltime: 0
-    levelDifficulty: 0
-    orders: []
-  - leveltime: 0
-    levelDifficulty: 0
-    orders: []
-  - leveltime: 0
-    levelDifficulty: 0
-    orders: []
-  - leveltime: 0
-    levelDifficulty: 0
-    orders: []
-  - leveltime: 0
-    levelDifficulty: 0
-    orders: []
+    meals:
+    - orders:
+      - vegitable: {fileID: 5079660402006580505, guid: da634add8dbe2a04fbca9407c655adc6, type: 3}
+        count: 1
+    - orders:
+      - vegitable: {fileID: 7533688808910108983, guid: 7beea9ad750e98643b77f2a315d54459, type: 3}
+        count: 1
+      - vegitable: {fileID: 1317520722668060314, guid: db1bdfb54c3dee8459261b45af0cfd62, type: 3}
+        count: 2
+    - orders:
+      - vegitable: {fileID: 8868085108652260775, guid: 5a067c87cbf699146a830b8ef480a666, type: 3}
+        count: 2
+      - vegitable: {fileID: 4170722717229257627, guid: 1301d73934bde6a4ca8becde620f3a42, type: 3}
+        count: 3
+  - leveltime: 120
+    levelDifficulty: 1
+    meals:
+    - orders:
+      - vegitable: {fileID: 4310876166633212836, guid: 67d0b61249c53954ea870e93571d4184, type: 3}
+        count: 2
+      - vegitable: {fileID: 8932757336366751895, guid: 7a5ba3a52ad1baf4786f6fea688b0f7a, type: 3}
+        count: 1
+      - vegitable: {fileID: 4119127600126534101, guid: 9f46b07f27a0d7c449ae194f6376eabc, type: 3}
+        count: 2
+    - orders:
+      - vegitable: {fileID: 5470905565960302933, guid: 0aebd3b0392837b449dfcfcafa332f47, type: 3}
+        count: 2
+      - vegitable: {fileID: 4625208771196674690, guid: d787ea03274380d41a7eee47eb5f70d5, type: 3}
+        count: 3
+  - leveltime: 120
+    levelDifficulty: 2
+    meals:
+    - orders:
+      - vegitable: {fileID: 4310876166633212836, guid: 67d0b61249c53954ea870e93571d4184, type: 3}
+        count: 2
+      - vegitable: {fileID: 8932757336366751895, guid: 7a5ba3a52ad1baf4786f6fea688b0f7a, type: 3}
+        count: 1
+      - vegitable: {fileID: 4119127600126534101, guid: 9f46b07f27a0d7c449ae194f6376eabc, type: 3}
+        count: 2
+      - vegitable: {fileID: 33437009371143408, guid: b53777adde7f99e4cb512c73a2ea14bd, type: 3}
+        count: 2
+    - orders:
+      - vegitable: {fileID: 5470905565960302933, guid: 0aebd3b0392837b449dfcfcafa332f47, type: 3}
+        count: 2
+      - vegitable: {fileID: 4625208771196674690, guid: d787ea03274380d41a7eee47eb5f70d5, type: 3}
+        count: 3
+      - vegitable: {fileID: 4170722717229257627, guid: 1301d73934bde6a4ca8becde620f3a42, type: 3}
+        count: 3
+    - orders:
+      - vegitable: {fileID: 2939726267799311996, guid: cc87dedd4a8b0b247bbd9acdb4e4cfdd, type: 3}
+        count: 2
+      - vegitable: {fileID: 4685350590111710379, guid: e097c09887a519b488b76b9a40b82cab, type: 3}
+        count: 3
+    - orders:
+      - vegitable: {fileID: 5885565117579909052, guid: c11065a5a23fc04478fdea11126e1fe0, type: 3}
+        count: 2
+      - vegitable: {fileID: 6819931442799504974, guid: a1ee8e1aca6bbb14ca2b7b14922c97b8, type: 3}
+        count: 3

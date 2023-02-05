@@ -53,34 +53,43 @@ public class Spawner : MonoBehaviour
 
         int currentLevel = Data.instance.GetCurrentLevel();
         Debug.Log(currentLevel);
-        bool flag = false;
-        int flag2 = 0;
+
+        List<Order> flagorders = new List<Order>();
+        for (int i = 0; i < levelManager.levels[currentLevel].meals.Count; i++)
+        {
+            for (int j = 0; j < levelManager.levels[currentLevel].meals[i].orders.Count; j++)
+            {
+                Order flag = new Order();
+                flag.vegitable = levelManager.levels[currentLevel].meals[i].orders[j].vegitable;
+                flag.count = levelManager.levels[currentLevel].meals[i].orders[j].count;
+                flagorders.Add(flag);
+            }
+        }
+        bool isSameVegi = false;
+        int sameVegiID = 0;
 
         for (int i = 0; i < vegitables.Count; i++)
         {
-            for (int j = 0; j < levelManager.levels[currentLevel].orders.Count; j++)
+            for (int j = 0; j < flagorders.Count; j++)
             {
-                if (vegitables[i].ID == levelManager.levels[currentLevel].orders[j].vegitable.ID)
+                if (vegitables[i].ID == flagorders[j].vegitable.ID)
                 {
-                    flag = true;
-                    flag2 = j;
+                    sameVegiID = j;
+                    isSameVegi = true;
                 }
             }
-
-            if (flag)
+            if (isSameVegi)
             {
-                SpawnObject(vegitables[i].gameObject, levelManager.levels[currentLevel].orders[flag2].count);
-                flag = false;
-
-
+                SpawnObject(vegitables[i].gameObject, flagorders[sameVegiID].count);
+                isSameVegi = false;
             }
             else
             {
                 SpawnObject(vegitables[i].gameObject, 1 * ((int)levelManager.levels[currentLevel].levelDifficulty + 1));
+
             }
-
-
         }
+
     }
 
     void SpawnObject(GameObject go, int count)

@@ -18,6 +18,14 @@ public class Order
     public Vegitable vegitable;
     public int count;
 }
+
+[Serializable]
+public class Meal
+{
+    public List<Order> orders = new List<Order>();
+
+}
+
 [Serializable]
 public class LevelOrder
 {
@@ -25,7 +33,7 @@ public class LevelOrder
     public int leveltime;
 
     public LevelDifficulty levelDifficulty;
-    public List<Order> orders = new List<Order>();
+    public List<Meal> meals = new List<Meal>();
 
 }
 
